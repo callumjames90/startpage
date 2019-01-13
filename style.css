@@ -3,15 +3,21 @@ CSS for my startpage. Mainly gathered from W3Schools.
 
 Comments are so I don't forget what things do.
 */
-
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #1a1b29;
 }
 
+#clock {
+    color: white;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 64px;
+}
+
 #search-box {
     /* moves element to "center" of page */
-    margin-top: 150px;
+    margin-top: 50px;
     text-align: center;
 }
 
