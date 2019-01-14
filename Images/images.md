@@ -1,1 +1,1 @@
-#Places images here
+Places images here
