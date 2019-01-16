@@ -6,6 +6,7 @@ https://www.w3schools.com/
 https://www.askdavetaylor.com/how_can_i_add_a_google_search_box_to_my_web_site/
 http://www.tristanwaddington.com/2010/08/javascript-clock/
 
+Images are from Google
 -->
 <!DOCTYPE html>
 <html>
@@ -19,15 +20,33 @@ http://www.tristanwaddington.com/2010/08/javascript-clock/
     <script src="script.js"></script>
 </head>
 
+<!-- load/update clock -->
 <body onload="setInterval('updateClock()', 200);">
 
     <h1 id="clock"></h1>
 
     <!-- creates the search bar, allows for queries through google search (hence the 'q') -->
     <form id="search-box" action="https://www.google.com/search" method="get">
-        <input id="search-bar" type="text" name="q">
+        <input id="search-bar" type="text" name="q" placeholder = "Search...">
     </form>
+
+    <section id = "links-section">
+
+        <div id = "reddit" class = "image-area">
+            <a href = "https://old.reddit.com/">
+                <div class = "link-area">
+                    <img class = "image" src = "Icons/new-icon.png"/>
+                    <p class = "image-text">Reddit</p>
+                </div>
+            </a>
+        </div>
+
+
+    </section>
 
 </body>
 
+<footer>
+    <p>Created by Callum Clapton:
+    <a href = "https://github.com/callumjames90" id = footer-author>GitHub</a> </p>
 </html>

@@ -1,3 +1,6 @@
+// Sourced from Tristan Waddington:
+// http://www.tristanwaddington.com/2010/08/javascript-clock/
+//
 // This function gets the current time and injects it into the DOM
 function updateClock() {
     // Gets the current time
