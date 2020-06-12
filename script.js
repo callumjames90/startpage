@@ -1,30 +1,12 @@
-// Sourced from Tristan Waddington:
-// http://www.tristanwaddington.com/2010/08/javascript-clock/
-//
-// This function gets the current time and injects it into the DOM
 function updateClock() {
-    // Gets the current time
+
     var now = new Date();
 
-    // Get the hours, minutes and seconds from the current time
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-    // Format hours, minutes and seconds
-    if (hours < 10) {
-        hours = "0" + hours;
-    }
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
-    if (seconds < 10) {
-        seconds = "0" + seconds;
-    }
+    var t = document.getElementById('clock-time');
+    t.innerHTML = now.toLocaleTimeString();
 
-    // Gets the element we want to inject the clock into
-    var elem = document.getElementById('clock');
-
-    // Sets the elements inner HTML value to our clock data
-    elem.innerHTML = hours + ':' + minutes + ':' + seconds;
+    var d = document.getElementById('clock-date');
+    d.innerHTML = now.toLocaleDateString("en-US", options);
 }
